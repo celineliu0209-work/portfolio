@@ -3,497 +3,536 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tzu-Ling (Celine) Liu — Growth Marketer</title>
-<meta name="description" content="Personal site of Tzu-Ling (Celine) Liu, a data-driven growth marketer with 6+ years across digital advertising, CRO and analytics in Taipei and Paris.">
-<meta property="og:title" content="Tzu-Ling (Celine) Liu — Growth Marketer">
-<meta property="og:description" content="Data-driven growth marketing. 6+ years · Taipei · Paris.">
+<title>Celine Liu — Growth Marketing & Analytics</title>
+<meta name="description" content="Tzu-Ling (Celine) Liu: growth and performance marketer with an analytics focus. Case reports on CRO, KPI dashboards and pipeline analysis.">
+<meta property="og:title" content="Celine Liu — Growth Marketing & Analytics">
+<meta property="og:description" content="Case reports on CRO, KPI dashboards and pipeline analysis.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
   :root {
     --bg: #ffffff;
-    --surface: #f7f7fa;
-    --card: #ffffff;
-    --text: #15171c;
-    --text-2: #555b69;
-    --text-3: #8a90a0;
-    --line: #ebecf1;
-    --pink: #e8559b;
-    --violet: #7358f0;
-    --blue: #2f8fe8;
-    --violet-soft: #f2efff;
+    --panel: #f7f8fa;
+    --text: #111827;
+    --text-2: #4b5563;
+    --text-3: #8b93a1;
+    --line: #e5e7eb;
+    --line-2: #d1d5db;
+    --accent: #2754d6;
+    --accent-soft: #eef2fd;
+    --accent-mid: #a9bcef;
+    --pos: #10805a;
+    --pos-soft: #e8f5ef;
     --grad: linear-gradient(90deg, #ff5ca8, #7b61ff, #2d9cff);
-    --wash-1: #ffe3ef; --wash-2: #dcecff; --wash-3: #ebe6ff;
-    --shadow: 0 1px 2px rgba(21,23,28,.04), 0 6px 20px rgba(21,23,28,.06);
-    --font: 'DM Sans', system-ui, -apple-system, sans-serif;
-    --gutter: clamp(16px, 5vw, 40px);
+    --violet: #7b61ff;
+    --sans: 'IBM Plex Sans', system-ui, -apple-system, sans-serif;
+    --mono: 'IBM Plex Mono', ui-monospace, Menlo, monospace;
+    --gutter: clamp(16px, 5vw, 48px);
     --max: 1040px;
-    --ease: cubic-bezier(.2,.8,.2,1);
   }
   @media (prefers-color-scheme: dark) {
     :root:not([data-theme="light"]) {
-      --bg: #0f1116; --surface: #161922; --card: #171a23; --text: #eef0f5; --text-2: #a9afbd; --text-3: #737a8b; --line: #252a36;
-      --pink: #ff7ab5; --violet: #9a86ff; --blue: #5aabff; --violet-soft: #221d40;
-      --wash-1: #3a1a2b; --wash-2: #13263d; --wash-3: #231d45;
-      --shadow: 0 1px 2px rgba(0,0,0,.3), 0 6px 20px rgba(0,0,0,.3);
+      --bg: #0e1116; --panel: #151a22; --text: #e8ebf0; --text-2: #a8b0bd; --text-3: #6f7886; --line: #232a35; --line-2: #313a48;
+      --accent: #7f9cff; --accent-soft: #1a2340; --accent-mid: #3b4f8f; --pos: #4cc79a; --pos-soft: #15302a; --violet: #9a86ff;
     }
   }
   :root[data-theme="dark"] {
-    --bg: #0f1116; --surface: #161922; --card: #171a23; --text: #eef0f5; --text-2: #a9afbd; --text-3: #737a8b; --line: #252a36;
-    --pink: #ff7ab5; --violet: #9a86ff; --blue: #5aabff; --violet-soft: #221d40;
-    --wash-1: #3a1a2b; --wash-2: #13263d; --wash-3: #231d45;
-    --shadow: 0 1px 2px rgba(0,0,0,.3), 0 6px 20px rgba(0,0,0,.3);
+    --bg: #0e1116; --panel: #151a22; --text: #e8ebf0; --text-2: #a8b0bd; --text-3: #6f7886; --line: #232a35; --line-2: #313a48;
+    --accent: #7f9cff; --accent-soft: #1a2340; --accent-mid: #3b4f8f; --pos: #4cc79a; --pos-soft: #15302a; --violet: #9a86ff;
   }
 
   * { box-sizing: border-box; margin: 0; padding: 0; }
-  html { scroll-behavior: smooth; overflow-x: clip; }
-  body { background: var(--bg); color: var(--text); font-family: var(--font); font-size: 16px; line-height: 1.65; font-variant-numeric: tabular-nums; -webkit-font-smoothing: antialiased; overflow-x: clip; }
+  html { scroll-behavior: smooth; }
+  body { background: var(--bg); color: var(--text); font-family: var(--sans); font-size: 16px; line-height: 1.6; -webkit-font-smoothing: antialiased; }
   a { color: inherit; }
   .wrap { max-width: var(--max); margin: 0 auto; padding: 0 var(--gutter); }
-  .grad-text { background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent; }
-  .link { color: var(--text); text-decoration: underline; text-decoration-color: var(--line); text-decoration-thickness: 2px; text-underline-offset: 4px; transition: text-decoration-color .2s; }
-  .link:hover { text-decoration-color: var(--violet); }
+  .mono { font-family: var(--mono); font-feature-settings: "tnum"; }
+  .u { text-decoration: underline; text-decoration-color: var(--line-2); text-underline-offset: 4px; transition: text-decoration-color .2s; }
+  .u:hover { text-decoration-color: var(--accent); }
 
-  /* ---------- Top bar ---------- */
-  .top { position: sticky; top: 0; z-index: 20; background: color-mix(in srgb, var(--bg) 82%, transparent); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-bottom: 1px solid transparent; transition: border-color .2s; }
-  .top.scrolled { border-color: var(--line); }
-  .top .wrap { display: flex; justify-content: space-between; align-items: center; height: 64px; }
-  .top .name { font-weight: 600; text-decoration: none; }
-  .top nav { display: flex; gap: 24px; font-size: 14px; }
-  .top nav a { text-decoration: none; color: var(--text-2); transition: color .2s; }
-  .top nav a:hover, .top nav a.active { color: var(--text); }
+  /* ---------- Header ---------- */
+  header.top { position: sticky; top: 0; z-index: 10; background: color-mix(in srgb, var(--bg) 90%, transparent); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }
+  header.top .wrap { display: flex; justify-content: space-between; align-items: center; height: 60px; }
+  header.top .me { font-weight: 600; text-decoration: none; }
+  header.top nav { display: flex; gap: 24px; font-size: 14px; }
+  header.top nav a { text-decoration: none; color: var(--text-2); }
+  header.top nav a:hover, header.top nav a.active { color: var(--text); }
 
   /* ---------- Intro ---------- */
-  .intro { position: relative; padding: clamp(56px, 9vw, 112px) 0 clamp(56px, 8vw, 96px); overflow: hidden; }
-  .wash { position: absolute; inset: 0; pointer-events: none; }
-  .wash i { position: absolute; border-radius: 50%; filter: blur(70px); }
-  .wash i:nth-child(1) { width: 480px; height: 480px; background: var(--wash-1); left: -140px; top: -180px; animation: drift 20s ease-in-out infinite; }
-  .wash i:nth-child(2) { width: 520px; height: 520px; background: var(--wash-2); right: -180px; top: -120px; animation: drift 24s ease-in-out infinite reverse; }
-  .wash i:nth-child(3) { width: 360px; height: 360px; background: var(--wash-3); left: 40%; top: 40%; animation: drift 18s ease-in-out infinite; }
-  @keyframes drift { 50% { transform: translate(30px, 24px) scale(1.06); } }
-  .intro .wrap { position: relative; display: grid; grid-template-columns: 1.5fr 1fr; gap: clamp(32px, 6vw, 72px); align-items: start; }
-  .avatar { width: 96px; height: 96px; border-radius: 50%; padding: 3px; background: var(--grad); box-shadow: 0 8px 24px rgba(123,97,255,.25); }
-  .avatar img { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; display: block; border: 3px solid var(--bg); }
-  .hello { font-size: 15px; color: var(--text-2); margin-top: 28px; }
-  .intro h1 { font-size: clamp(36px, 5.4vw, 60px); font-weight: 700; letter-spacing: -.035em; line-height: 1.08; margin-top: 6px; }
-  .intro .role { font-size: clamp(18px, 2vw, 22px); margin-top: 12px; font-weight: 500; }
-  .intro .bio { color: var(--text-2); font-size: 17px; margin-top: 22px; max-width: 54ch; }
-  .intro .bio p + p { margin-top: 12px; }
-  .intro .contacts { display: flex; gap: 20px; flex-wrap: wrap; margin-top: 26px; font-size: 15px; }
+  .intro { padding: clamp(48px, 8vw, 96px) 0 clamp(48px, 6vw, 72px); border-bottom: 1px solid var(--line); }
+  .intro .wrap { display: grid; grid-template-columns: 1.3fr 1fr; gap: clamp(32px, 6vw, 64px); align-items: center; }
+  .who { display: flex; gap: 16px; align-items: center; flex-wrap: wrap; }
+  .who img { width: 72px; height: 72px; border-radius: 50%; object-fit: cover; }
+  .badge { display: inline-flex; align-items: center; gap: 6px; font-size: 13px; padding: 4px 10px; border-radius: 999px; background: var(--pos-soft); color: var(--pos); font-weight: 500; }
+  .badge::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: currentColor; }
+  .intro h1 { font-size: clamp(32px, 4.6vw, 48px); font-weight: 600; letter-spacing: -.025em; line-height: 1.12; margin-top: 24px; }
+  .intro .sub { font-size: clamp(18px, 2vw, 21px); color: var(--text-2); margin-top: 8px; }
+  .intro .bio { margin-top: 18px; color: var(--text-2); max-width: 54ch; }
+  .intro .links { display: flex; gap: 20px; flex-wrap: wrap; margin-top: 20px; font-size: 15px; }
+  .summary { border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
+  .summary table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  .summary td { padding: 12px 16px; border-top: 1px solid var(--line); vertical-align: top; }
+  .summary tr:first-child td { border-top: none; }
+  .summary td:first-child { font-family: var(--mono); font-size: 11px; text-transform: uppercase; letter-spacing: .05em; color: var(--text-3); width: 34%; padding-top: 14px; }
 
-  .glance { background: color-mix(in srgb, var(--card) 80%, transparent); backdrop-filter: blur(8px); border: 1px solid var(--line); border-radius: 20px; padding: 22px 24px; box-shadow: var(--shadow); margin-top: 8px; }
-  .glance h2 { font-size: 13px; font-weight: 600; color: var(--text-3); letter-spacing: .06em; text-transform: uppercase; margin-bottom: 8px; }
-  .glance dl { display: grid; grid-template-columns: auto 1fr; gap: 0 16px; font-size: 14px; }
-  .glance dt, .glance dd { padding: 10px 0; border-top: 1px solid var(--line); }
-  .glance dt:first-of-type, .glance dd:first-of-type { border-top: none; }
-  .glance dt { color: var(--text-3); }
-  .glance dd { text-align: right; }
-  .dot { display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: #22c55e; margin-right: 6px; vertical-align: middle; }
+  /* ---------- Section scaffold ---------- */
+  section.block { padding: clamp(56px, 8vw, 88px) 0; border-bottom: 1px solid var(--line); }
+  .sh { margin-bottom: 28px; }
+  .sh .n { font-family: var(--mono); font-size: 12px; color: var(--accent); letter-spacing: .04em; }
+  .sh h2 { font-size: clamp(24px, 3vw, 30px); font-weight: 600; letter-spacing: -.02em; margin-top: 6px; }
+  .sh p { color: var(--text-2); margin-top: 6px; max-width: 64ch; }
 
-  /* ---------- Section scaffolding ---------- */
-  section { padding: clamp(64px, 9vw, 104px) 0; }
-  section.soft { background: var(--surface); }
-  .sec-title { display: grid; grid-template-columns: 200px 1fr; gap: 32px; margin-bottom: 40px; align-items: baseline; }
-  .sec-title .k { font-size: 13px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--violet); }
-  .sec-title h2 { font-size: clamp(26px, 3.2vw, 36px); font-weight: 700; letter-spacing: -.03em; line-height: 1.2; }
-  .sec-title p { color: var(--text-2); margin-top: 8px; }
+  /* ---------- Workflow ---------- */
+  .flow-label { font-family: var(--mono); font-size: 12px; color: var(--text-3); text-transform: uppercase; letter-spacing: .06em; margin-bottom: 10px; }
+  .flow + .flow-label, .flow-proof + .flow-label { margin-top: 28px; }
+  .flow { display: grid; grid-template-columns: repeat(4, 1fr); border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
+  .stage { padding: 18px 20px; position: relative; }
+  .stage + .stage { border-left: 1px solid var(--line); }
+  .stage + .stage::before { content: "→"; position: absolute; left: -9px; top: 16px; width: 18px; height: 18px; background: var(--bg); color: var(--text-3); font-size: 12px; display: grid; place-items: center; }
+  .stage .k { font-family: var(--mono); font-size: 12px; color: var(--accent); }
+  .stage h3 { font-size: 16px; font-weight: 600; margin: 2px 0 6px; }
+  .stage p { font-size: 14px; color: var(--text-2); }
+  .stage .tools { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 10px; }
+  .tool { font-family: var(--mono); font-size: 11px; padding: 2px 7px; border-radius: 4px; background: var(--panel); border: 1px solid var(--line); color: var(--text-2); }
+  .flow-proof { display: flex; flex-wrap: wrap; gap: 8px 24px; margin-top: 12px; font-size: 14px; color: var(--text-2); }
+  .flow-proof b { font-family: var(--mono); font-weight: 500; color: var(--text); margin-right: 4px; }
 
-  /* ---------- About / how I work ---------- */
-  .numbers { display: grid; grid-template-columns: repeat(4, 1fr); border: 1px solid var(--line); border-radius: 20px; background: var(--card); overflow: hidden; }
-  .numbers div { padding: 22px 24px; }
-  .numbers div + div { border-left: 1px solid var(--line); }
-  .numbers b { display: block; font-size: clamp(28px, 3.4vw, 38px); font-weight: 700; letter-spacing: -.03em; line-height: 1.15; }
-  .numbers span { font-size: 14px; color: var(--text-2); }
-  .how { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 16px; }
-  .how div { padding: 22px 24px; border-radius: 20px; background: var(--card); border: 1px solid var(--line); }
-  .how .n { font-size: 13px; font-weight: 600; color: var(--violet); }
-  .how h3 { font-size: 17px; font-weight: 600; margin: 6px 0 4px; }
-  .how p { font-size: 14px; color: var(--text-2); }
+  /* ---------- Case cards ---------- */
+  .case { border: 1px solid var(--line); border-radius: 12px; overflow: hidden; }
+  .case + .case { margin-top: 16px; }
+  .c-sum { display: grid; grid-template-columns: 1fr auto; gap: 24px; padding: 22px 24px; align-items: start; }
+  .c-meta { font-family: var(--mono); font-size: 12px; color: var(--text-3); text-transform: uppercase; letter-spacing: .05em; }
+  .c-meta b { color: var(--accent); font-weight: 500; }
+  .c-sum h3 { font-size: clamp(19px, 2.2vw, 22px); font-weight: 600; letter-spacing: -.015em; line-height: 1.3; margin-top: 8px; }
+  .c-sum .obj { color: var(--text-2); font-size: 15px; margin-top: 6px; max-width: 58ch; }
+  .c-sum .tags { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 14px; }
+  .c-nums { display: flex; gap: 10px; }
+  .c-num { min-width: 104px; padding: 12px 14px; border-radius: 8px; background: var(--panel); text-align: left; }
+  .c-num b { display: block; font-family: var(--mono); font-weight: 500; font-size: 24px; letter-spacing: -.02em; line-height: 1.2; }
+  .c-num span { font-size: 12px; color: var(--text-2); }
+  details.more { border-top: 1px solid var(--line); }
+  details.more summary { list-style: none; cursor: pointer; padding: 12px 24px; font-size: 14px; font-weight: 500; color: var(--accent); display: flex; align-items: center; gap: 8px; user-select: none; }
+  details.more summary::-webkit-details-marker { display: none; }
+  details.more summary::after { content: "+"; font-family: var(--mono); font-size: 16px; line-height: 1; transition: transform .2s; }
+  details.more[open] summary::after { transform: rotate(45deg); }
+  details.more summary:hover { background: var(--panel); }
+  details.more summary .open-t { display: none; }
+  details.more[open] summary .open-t { display: inline; }
+  details.more[open] summary .closed-t { display: none; }
+  .c-body { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; padding: 4px 24px 24px; }
+  .spec { width: 100%; border-collapse: collapse; font-size: 14px; }
+  .spec th, .spec td { text-align: left; padding: 9px 0; border-top: 1px solid var(--line); vertical-align: top; }
+  .spec tr:first-child th, .spec tr:first-child td { border-top: none; }
+  .spec th { font-weight: 500; color: var(--text-3); width: 104px; padding-right: 12px; font-size: 13px; }
+  .spec td { color: var(--text-2); }
+  .spec td b { color: var(--text); font-weight: 600; }
+  .viz { border: 1px solid var(--line); border-radius: 10px; padding: 16px; }
+  .viz + .viz { margin-top: 12px; }
+  .viz .vt { font-family: var(--mono); font-size: 11px; color: var(--text-3); text-transform: uppercase; letter-spacing: .05em; margin-bottom: 12px; display: flex; justify-content: space-between; }
+  .viz .vt b { color: var(--pos); font-weight: 500; }
+  .funnel { display: grid; gap: 6px; }
+  .funnel .st { display: grid; grid-template-columns: 1fr auto; align-items: center; font-size: 13px; padding: 7px 10px; border-radius: 4px; background: var(--accent-soft); }
+  .funnel .st span:last-child { font-family: var(--mono); font-size: 11px; color: var(--accent); }
+  .funnel .st:nth-child(2) { margin: 0 6%; } .funnel .st:nth-child(3) { margin: 0 12%; } .funnel .st:nth-child(4) { margin: 0 18%; }
+  .chain { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; font-size: 13px; }
+  .chain span { padding: 4px 10px; border: 1px solid var(--line-2); border-radius: 999px; }
+  .chain i { font-style: normal; color: var(--text-3); }
+  .bars { display: grid; gap: 8px; }
+  .bar { display: grid; grid-template-columns: 104px 1fr 52px; align-items: center; gap: 10px; font-size: 13px; color: var(--text-2); }
+  .bar .tr { height: 12px; background: var(--panel); border-radius: 2px; overflow: hidden; }
+  .bar .f { height: 100%; width: 0; background: var(--accent-mid); transition: width 1s cubic-bezier(.2,.8,.2,1); }
+  .bar.hi .f { background: var(--accent); }
+  .bar .v { font-family: var(--mono); text-align: right; color: var(--text); }
+  .viz .note { font-family: var(--mono); font-size: 11px; color: var(--text-3); margin-top: 10px; }
+  .shot { grid-column: 1 / -1; border: 1px dashed var(--line-2); border-radius: 8px; aspect-ratio: 16 / 6; display: grid; place-items: center; font-family: var(--mono); font-size: 12px; color: var(--text-3); background: repeating-linear-gradient(135deg, transparent 0 12px, var(--panel) 12px 24px); }
+  .shot img { width: 100%; height: 100%; object-fit: cover; border-radius: 8px; display: block; }
 
-  /* ---------- Career overview (timeline chart) ---------- */
-  .gantt { background: var(--card); border: 1px solid var(--line); border-radius: 20px; padding: 22px 24px; overflow-x: auto; margin-bottom: 48px; }
-  .gantt .cap { font-size: 13px; color: var(--text-3); margin-bottom: 12px; }
+  /* ---------- Career timeline (gantt) ---------- */
+  .gantt { border: 1px solid var(--line); border-radius: 12px; padding: 22px 24px; overflow-x: auto; position: relative; }
+  .gantt .cap { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; font-size: 14px; color: var(--text-3); margin-bottom: 14px; }
   .g-inner { min-width: 680px; position: relative; }
-  .g-axis, .g-row { display: grid; grid-template-columns: 150px 1fr; align-items: center; }
-  .g-axis { font-size: 12px; color: var(--text-3); padding-bottom: 10px; border-bottom: 1px solid var(--line); }
+  .g-axis, .g-row { display: grid; grid-template-columns: 160px 1fr; align-items: center; }
+  .g-axis { font-family: var(--mono); font-size: 12px; color: var(--text-3); padding-bottom: 10px; border-bottom: 1px solid var(--line); }
   .g-years { position: relative; height: 18px; }
   .g-years span { position: absolute; transform: translateX(-50%); }
-  .g-row { height: 44px; }
-  .g-name { font-size: 13px; font-weight: 500; }
+  .g-row { height: 46px; }
+  .g-name { font-size: 14px; font-weight: 500; }
   .g-lane { position: relative; height: 100%; }
-  .g-grid { position: absolute; top: 28px; bottom: 0; left: 150px; right: 0; pointer-events: none; }
+  .g-grid { position: absolute; top: 28px; bottom: 0; left: 160px; right: 0; pointer-events: none; }
   .g-grid i { position: absolute; top: 0; bottom: 0; border-left: 1px solid var(--line); }
-  .g-bar { position: absolute; top: 50%; height: 22px; margin-top: -11px; border-radius: 999px; background: var(--grad); background-size: 680px 100%; color: #fff; font-size: 11px; font-weight: 500; padding: 0 10px; line-height: 22px; white-space: nowrap; overflow: hidden; transform: scaleX(0); transform-origin: left; transition: transform .9s var(--ease); }
-  .g-bar.study { background: transparent; border: 1.5px dashed var(--violet); color: var(--violet); line-height: 19px; }
+  .g-bar { position: absolute; top: 50%; height: 24px; margin-top: -12px; border-radius: 999px; background: var(--grad); background-size: 680px 100%; color: #fff; font-size: 12px; font-weight: 500; padding: 0 10px; line-height: 24px; white-space: nowrap; overflow: hidden; transform: scaleX(0); transform-origin: left; transition: transform .9s cubic-bezier(.2,.8,.2,1), box-shadow .2s; cursor: pointer; border: none; font-family: inherit; text-align: left; }
+  .g-bar:hover, .g-bar:focus-visible, .g-bar.on { box-shadow: 0 0 0 3px var(--accent-soft); outline: none; }
+  .g-bar.study { background: transparent; border: 1.5px dashed var(--violet); color: var(--violet); line-height: 21px; }
   .in .g-bar { transform: scaleX(1); }
-  .g-out { position: absolute; top: 50%; transform: translateY(-50%); font-size: 12px; color: var(--text-2); white-space: nowrap; opacity: 0; transition: opacity .4s .8s; }
+  .g-out { position: absolute; top: 50%; transform: translateY(-50%); font-size: 13px; color: var(--text-2); white-space: nowrap; opacity: 0; transition: opacity .4s .8s; pointer-events: none; }
   .in .g-out { opacity: 1; }
+  .g-tip { position: fixed; z-index: 30; width: 280px; padding: 12px 14px; border-radius: 10px; background: var(--text); color: var(--bg); font-size: 13px; line-height: 1.5; box-shadow: 0 10px 30px rgba(0,0,0,.18); opacity: 0; pointer-events: none; transform: translateY(4px); transition: opacity .15s, transform .15s; }
+  .g-tip.show { opacity: 1; transform: none; }
+  .g-tip b { display: block; font-size: 14px; }
+  .g-tip .d { font-family: var(--mono); font-size: 11px; opacity: .7; margin: 2px 0 6px; }
 
-  /* ---------- Career entries ---------- */
-  .career { position: relative; }
-  .entry { display: grid; grid-template-columns: 200px 1fr; gap: 32px; position: relative; padding-bottom: 56px; }
-  .entry:last-child { padding-bottom: 0; }
-  .entry .side { position: sticky; top: 88px; align-self: start; }
-  .entry .when { font-size: 14px; color: var(--text-3); }
-  .entry .co { font-size: 18px; font-weight: 700; letter-spacing: -.01em; margin-top: 2px; }
-  .entry .loc { font-size: 14px; color: var(--text-3); }
-  .entry .main { border-left: 2px solid var(--line); padding-left: 32px; position: relative; }
-  .entry .main::before { content: ""; position: absolute; left: -7px; top: 6px; width: 12px; height: 12px; border-radius: 50%; background: var(--bg); border: 2px solid var(--violet); }
-  .entry.now .main::before { background: var(--violet); box-shadow: 0 0 0 5px var(--violet-soft); }
-  .entry h3 { font-size: 22px; font-weight: 700; letter-spacing: -.02em; line-height: 1.3; }
-  .entry .ctx { font-size: 15px; color: var(--text-2); margin-top: 4px; }
-  .kpis { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 18px; }
-  .kpi { padding: 10px 16px; border-radius: 14px; background: var(--violet-soft); }
-  .kpi b { display: block; font-size: 22px; font-weight: 700; letter-spacing: -.02em; line-height: 1.2; color: var(--violet); }
-  .kpi span { font-size: 12px; color: var(--text-2); }
-  .entry ul { list-style: none; display: grid; gap: 8px; margin-top: 18px; color: var(--text-2); font-size: 15px; }
-  .entry li { position: relative; padding-left: 18px; }
-  .entry li::before { content: ""; position: absolute; left: 0; top: .66em; width: 6px; height: 6px; border-radius: 50%; background: var(--text-3); }
-  .entry li b { color: var(--text); font-weight: 600; }
-  .tools { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 16px; }
-  .tools span { font-size: 12px; padding: 3px 10px; border-radius: 999px; border: 1px solid var(--line); color: var(--text-2); }
-  .promo { display: flex; flex-direction: column; gap: 6px; margin-top: 16px; font-size: 14px; color: var(--text-2); }
-  .promo span b { color: var(--text); font-weight: 600; }
 
-  .case { margin-top: 24px; border: 1px solid var(--line); border-radius: 20px; background: var(--card); overflow: hidden; box-shadow: var(--shadow); }
-  .case .shot { aspect-ratio: 16 / 8; position: relative; overflow: hidden; background: var(--surface); }
-  .case .shot::before { content: ""; position: absolute; inset: 0; background: radial-gradient(at 15% 20%, var(--wash-1), transparent 55%), radial-gradient(at 85% 80%, var(--wash-2), transparent 55%), radial-gradient(at 70% 15%, var(--wash-3), transparent 50%); }
-  .case .shot img { position: relative; width: 100%; height: 100%; object-fit: cover; display: block; }
-  .case .shot .ph { position: absolute; inset: 0; display: grid; place-items: center; font-size: 13px; color: var(--text-3); }
-  .case .shot .ph span { background: color-mix(in srgb, var(--card) 85%, transparent); padding: 6px 14px; border-radius: 999px; }
-  .case .body { padding: 22px 24px 24px; }
-  .case .label { font-size: 12px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--violet); }
-  .case h4 { font-size: 18px; font-weight: 600; margin: 4px 0 14px; letter-spacing: -.01em; }
-  .case dl { display: grid; grid-template-columns: 90px 1fr; gap: 10px 16px; font-size: 15px; }
-  .case dt { font-size: 13px; font-weight: 600; color: var(--text-3); padding-top: 1px; }
-  .case dd { color: var(--text-2); }
-  .case dd b { color: var(--text); font-weight: 600; }
+  /* ---------- Experience list ---------- */
+  .jobs { margin-top: 24px; border-top: 1px solid var(--line); }
+  .job { display: grid; grid-template-columns: 200px 1fr; gap: 24px; padding: 18px 0; border-bottom: 1px solid var(--line); }
+  .jw .mono { display: block; font-size: 12px; color: var(--text-3); }
+  .jw b { display: block; font-weight: 600; font-size: 15px; margin-top: 2px; }
+  .jw small { font-size: 13px; color: var(--text-3); }
+  .job h3 { font-size: 15px; font-weight: 600; }
+  .job ul { list-style: none; margin-top: 6px; display: grid; gap: 3px; font-size: 14px; color: var(--text-2); }
+  .job li { position: relative; padding-left: 14px; }
+  .job li::before { content: ""; position: absolute; left: 0; top: .62em; width: 5px; height: 5px; border-radius: 50%; background: var(--text-3); }
 
   /* ---------- Skills & education ---------- */
-  .two { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
-  .panel { background: var(--card); border: 1px solid var(--line); border-radius: 20px; padding: 24px; }
-  .panel h3 { font-size: 13px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--text-3); margin-bottom: 8px; }
-  .srow { display: grid; grid-template-columns: 130px 1fr; gap: 16px; padding: 12px 0; border-top: 1px solid var(--line); font-size: 15px; }
-  .srow:first-of-type { border-top: none; }
-  .srow .a { font-weight: 600; }
-  .srow .b { display: flex; flex-wrap: wrap; gap: 6px; }
-  .srow .b span { font-size: 13px; padding: 2px 10px; border-radius: 999px; background: var(--surface); color: var(--text-2); }
-  .erow { padding: 12px 0; border-top: 1px solid var(--line); }
-  .erow:first-of-type { border-top: none; }
-  .erow b { display: block; font-weight: 600; font-size: 15px; line-height: 1.4; }
-  .erow span { font-size: 14px; color: var(--text-3); }
+  .two { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
+  .two h3 { font-family: var(--mono); font-size: 12px; font-weight: 500; color: var(--text-3); text-transform: uppercase; letter-spacing: .06em; margin-bottom: 4px; }
+  .li { display: grid; grid-template-columns: 120px 1fr; gap: 12px; padding: 11px 0; border-top: 1px solid var(--line); font-size: 14px; color: var(--text-2); }
+  .li:first-of-type { border-top: none; }
+  .li b { color: var(--text); font-weight: 500; }
+  .li .y { font-family: var(--mono); font-size: 12px; color: var(--text-3); padding-top: 2px; }
+  .li small { display: block; color: var(--text-3); font-size: 13px; }
 
   /* ---------- Contact ---------- */
-  .contact { display: grid; grid-template-columns: 200px 1fr; gap: 32px; }
-  .contact p { font-size: clamp(20px, 2.4vw, 26px); line-height: 1.45; letter-spacing: -.015em; max-width: 30ch; }
-  .contact .contacts { display: flex; gap: 24px; flex-wrap: wrap; margin-top: 24px; font-size: 16px; }
-  footer { padding: 32px 0 48px; border-top: 1px solid var(--line); font-size: 13px; color: var(--text-3); }
+  .contact { padding: clamp(56px, 8vw, 88px) 0 48px; }
+  .contact h2 { font-size: clamp(26px, 3.4vw, 36px); font-weight: 600; letter-spacing: -.02em; margin-top: 6px; }
+  .contact p { color: var(--text-2); margin-top: 8px; max-width: 56ch; }
+  .contact .links { display: flex; gap: 24px; flex-wrap: wrap; margin-top: 20px; font-size: 17px; }
+  footer { border-top: 1px solid var(--line); padding: 20px 0 36px; font-size: 13px; color: var(--text-3); }
   footer .wrap { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
 
-  /* ---------- Reveal ---------- */
-  .reveal { opacity: 0; transform: translateY(18px); transition: opacity .7s ease, transform .7s var(--ease); }
-  .reveal.in { opacity: 1; transform: none; }
+  /* ---------- Motion ---------- */
+  .fade { opacity: 0; transform: translateY(12px); transition: opacity .6s ease, transform .6s ease; }
+  .fade.in { opacity: 1; transform: none; }
 
   /* ---------- Responsive ---------- */
-  @media (max-width: 860px) {
-    .top nav { display: none; }
-    .intro .wrap { grid-template-columns: 1fr; }
-    .sec-title, .entry, .contact { grid-template-columns: 1fr; gap: 8px; }
-    .entry .side { position: static; margin-bottom: 12px; }
-    .numbers { grid-template-columns: 1fr 1fr; }
-    .numbers div + div { border-left: none; }
-    .numbers div:nth-child(2n) { border-left: 1px solid var(--line); }
-    .numbers div:nth-child(n+3) { border-top: 1px solid var(--line); }
-    .how, .two { grid-template-columns: 1fr; }
+  @media (max-width: 880px) {
+    header.top nav { display: none; }
+    .intro .wrap, .c-body, .two { grid-template-columns: 1fr; }
+    .flow { grid-template-columns: 1fr 1fr; }
+    .stage + .stage { border-left: none; }
+    .stage:nth-child(2n) { border-left: 1px solid var(--line); }
+    .stage:nth-child(n+3) { border-top: 1px solid var(--line); }
+    .stage + .stage::before { display: none; }
+    .c-sum { grid-template-columns: 1fr; gap: 16px; }
+    .job { grid-template-columns: 1fr; gap: 6px; }
   }
   @media (max-width: 520px) {
-    .entry .main { padding-left: 22px; }
-    .case dl { grid-template-columns: 1fr; gap: 2px; }
-    .case dd { margin-bottom: 10px; }
-    .srow { grid-template-columns: 1fr; gap: 6px; }
+    .flow { grid-template-columns: 1fr; }
+    .stage:nth-child(2n) { border-left: none; }
+    .stage + .stage { border-top: 1px solid var(--line); }
+    .c-nums { flex-wrap: wrap; }
+    .c-num { flex: 1 1 40%; }
+    .li { grid-template-columns: 1fr; gap: 2px; }
+    .shot { aspect-ratio: 16 / 9; }
   }
   @media (prefers-reduced-motion: reduce) {
-    *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
-    .reveal { opacity: 1; transform: none; }
+    *, *::before, *::after { transition: none !important; scroll-behavior: auto !important; }
+    .fade { opacity: 1; transform: none; }
     .g-bar { transform: none; } .g-out { opacity: 1; }
   }
 </style>
 </head>
 <body>
 
-<header class="top" id="topbar">
+<header class="top">
   <div class="wrap">
-    <a href="#top" class="name">Celine Liu</a>
+    <a href="#" class="me">Celine Liu</a>
     <nav aria-label="Sections">
-      <a href="#about">About</a>
-      <a href="#career">Career</a>
-      <a href="#skills">Skills</a>
-      <a href="#contact">Contact</a>
+      <a href="#workflow">Workflow</a><a href="#cases">Cases</a><a href="#experience">Experience</a><a href="#contact">Contact</a>
     </nav>
   </div>
 </header>
 
-<!-- INTRO -->
-<section class="intro" id="top">
-  <div class="wash" aria-hidden="true"><i></i><i></i><i></i></div>
+<section class="intro">
   <div class="wrap">
     <div>
-      <div class="avatar"><img src="images/avatar.jpg" alt="Portrait of Tzu-Ling (Celine) Liu" width="96" height="96"></div>
-      <p class="hello">Hi, I'm</p>
+      <div class="who"><img src="images/avatar.jpg" alt="Portrait of Tzu-Ling (Celine) Liu"><span class="badge">Open to new roles</span></div>
       <h1>Tzu-Ling (Celine) Liu</h1>
-      <p class="role"><span class="grad-text">Growth marketer</span> who works from the data up.</p>
-      <div class="bio">
-        <p>I've spent 6+ years in marketing, across a digital ad agency in Taipei, a lead generation agency and a fashion brand in Paris, and now ESG consulting at Delta Electronics.</p>
-        <p>The thread through all of it is simple. I look at the numbers to find where performance leaks, test a fix, and scale what works.</p>
-      </div>
-      <div class="contacts">
-        <a class="link" href="mailto:celineliu0209@gmail.com">celineliu0209@gmail.com</a>
-        <a class="link" href="https://www.linkedin.com/in/celine-liu029" target="_blank" rel="noopener">LinkedIn ↗</a>
+      <p class="sub">Growth & performance marketer with an analytics focus.</p>
+      <p class="bio">6+ years in marketing across a Taipei ad agency, a Paris lead-gen agency and fashion brand, and now ESG consulting at Delta Electronics. I look at the numbers to find where performance leaks, test a fix, and scale what works.</p>
+      <div class="links">
+        <a class="u" href="mailto:celineliu0209@gmail.com">celineliu0209@gmail.com</a>
+        <a class="u" href="https://www.linkedin.com/in/celine-liu029" target="_blank" rel="noopener">LinkedIn ↗</a>
       </div>
     </div>
-
-    <aside class="glance reveal" aria-label="At a glance">
-      <h2>At a glance</h2>
-      <dl>
-        <dt>Now</dt><dd>Strategic Growth Manager, Delta</dd>
-        <dt>Experience</dt><dd>6+ years</dd>
-        <dt>Focus</dt><dd>Performance, CRO, analytics</dd>
-        <dt>Based in</dt><dd>Taipei · open to international &amp; remote roles</dd>
-        <dt>Languages</dt><dd>Mandarin · English · French</dd>
-        <dt>Status</dt><dd><span class="dot"></span>Open to new roles</dd>
-      </dl>
+    <aside class="summary fade" aria-label="Profile summary">
+      <table>
+        <tr><td>Now</td><td>Strategic Growth Manager, Delta Electronics</td></tr>
+        <tr><td>Metrics</td><td>Lead volume, CPL, CVR, pipeline</td></tr>
+        <tr><td>Stack</td><td>GA4, Looker Studio, SQL, Google / Meta / LinkedIn Ads</td></tr>
+        <tr><td>Based in</td><td>Taipei · open to international &amp; remote roles</td></tr>
+      </table>
     </aside>
   </div>
 </section>
 
-<!-- ABOUT -->
-<section id="about" class="soft">
+<!-- WORKFLOW -->
+<section class="block" id="workflow">
   <div class="wrap">
-    <div class="sec-title">
-      <span class="k">About</span>
-      <div><h2>My career in numbers</h2><p>Every figure here is taken from my CV.</p></div>
+    <div class="sh"><span class="n">01 / WORKFLOW</span><h2>How I work</h2></div>
+
+    <div class="flow-label">Marketing &amp; data</div>
+    <div class="flow fade">
+      <div class="stage"><span class="k">01</span><h3>Collect</h3><p>Bring analytics and ad data into one place.</p><div class="tools"><span class="tool">GA4</span><span class="tool">Google Ads</span><span class="tool">Meta</span><span class="tool">LinkedIn</span></div></div>
+      <div class="stage"><span class="k">02</span><h3>Analyse</h3><p>Find where the funnel loses volume and conversion.</p><div class="tools"><span class="tool">Looker Studio</span><span class="tool">SQL</span></div></div>
+      <div class="stage"><span class="k">03</span><h3>Test</h3><p>Rank fixes by impact and run A/B tests.</p><div class="tools"><span class="tool">A/B testing</span><span class="tool">CRO roadmap</span></div></div>
+      <div class="stage"><span class="k">04</span><h3>Report</h3><p>Turn results into dashboards and playbooks.</p><div class="tools"><span class="tool">Dashboards</span><span class="tool">Claude Code</span></div></div>
     </div>
-    <div class="numbers reveal">
-      <div><b data-count="80" data-suffix="+">0</b><span>A/B tests designed & shipped</span></div>
-      <div><b data-count="20" data-prefix="+" data-suffix="%">0</b><span>uplift in key funnel metrics</span></div>
-      <div><b data-count="15" data-prefix="+" data-suffix="%">0</b><span>project results as a team lead</span></div>
-      <div><b data-count="90" data-suffix="%">0</b><span>of clients kept long term</span></div>
+    <div class="flow-proof fade">
+      <span><b>80+</b> A/B tests designed &amp; executed</span>
+      <span><b>+20%</b> uplift in key funnel metrics</span>
+      <span><b>+15%</b> project results from campaign insights</span>
     </div>
-    <div class="how">
-      <div class="reveal"><span class="n">01 · Diagnose</span><h3>Start with the funnel</h3><p>I dig into GA4, Looker Studio and campaign data to find exactly where conversion drops.</p></div>
-      <div class="reveal"><span class="n">02 · Test</span><h3>Turn findings into experiments</h3><p>I rank the ideas by impact, align with stakeholders, and run clean A/B tests.</p></div>
-      <div class="reveal"><span class="n">03 · Scale</span><h3>Make it repeatable</h3><p>I turn what works into playbooks, dashboards and reporting the team can reuse.</p></div>
+
+    <div class="flow-label">Sales</div>
+    <div class="flow fade">
+      <div class="stage"><span class="k">01</span><h3>Prospect</h3><p>Build pipeline through outreach and events.</p><div class="tools"><span class="tool">Cold outreach</span><span class="tool">Events</span></div></div>
+      <div class="stage"><span class="k">02</span><h3>Discover</h3><p>Understand each client's needs and market.</p><div class="tools"><span class="tool">Needs analysis</span></div></div>
+      <div class="stage"><span class="k">03</span><h3>Propose</h3><p>Write tailored strategies and localized proposals.</p><div class="tools"><span class="tool">Proposals</span><span class="tool">GTM materials</span></div></div>
+      <div class="stage"><span class="k">04</span><h3>Close &amp; grow</h3><p>Sell consultatively and keep clients long term.</p><div class="tools"><span class="tool">Consultative selling</span><span class="tool">Pipeline analysis</span></div></div>
+    </div>
+    <div class="flow-proof fade">
+      <span><b>+13%</b> above quarterly sales target</span>
+      <span><b>+25%</b> above target at GANNI</span>
+      <span><b>+10%</b> business growth from prospecting</span>
+      <span><b>90%+</b> long-term client retention</span>
     </div>
   </div>
 </section>
 
-<!-- CAREER -->
-<section id="career">
+<!-- CASES -->
+<section class="block" id="cases">
   <div class="wrap">
-    <div class="sec-title">
-      <span class="k">Career</span>
-      <div><h2>Where I've worked, and what I delivered</h2></div>
-    </div>
+    <div class="sh"><span class="n">02 / CASES</span><h2>Selected cases</h2><p>Open a case to see the metrics, data and method behind it.</p></div>
 
-    <div class="gantt reveal">
-      <div class="cap">Career overview, 2020 to now</div>
+    <article class="case fade">
+      <div class="c-sum">
+        <div>
+          <div class="c-meta"><b>01</b> · CRO · Dolead · Paris · 2025</div>
+          <h3>Finding and fixing conversion drop-offs in lead generation funnels</h3>
+          <p class="obj">Found where lead funnels lost conversions, then ranked and tested the fixes.</p>
+          <div class="tags"><span class="tool">GA4</span><span class="tool">Looker Studio</span><span class="tool">A/B testing</span></div>
+        </div>
+        <div class="c-nums"><div class="c-num"><b>80+</b><span>A/B tests</span></div><div class="c-num"><b>+20%</b><span>key-metric uplift</span></div></div>
+      </div>
+      <details class="more">
+        <summary><span class="closed-t">Read full report</span><span class="open-t">Hide report</span></summary>
+        <div class="c-body">
+          <table class="spec">
+            <tr><th>KPIs tracked</th><td><b>Lead volume, CPL, CVR</b></td></tr>
+            <tr><th>Data sources</th><td>GA4, Looker Studio</td></tr>
+            <tr><th>Method</th><td>Funnel drop-off analysis, impact-ranked CRO roadmap, A/B tests with stakeholder-aligned hypotheses</td></tr>
+            <tr><th>Outcome</th><td>80+ tests, a 20% uplift in key metrics, and reusable optimisation playbooks</td></tr>
+          </table>
+          <div>
+            <div class="viz">
+              <div class="vt"><span>Funnel analysed</span><span>metric per stage</span></div>
+              <div class="funnel">
+                <div class="st"><span>Ad traffic</span><span>volume</span></div>
+                <div class="st"><span>Landing page</span><span>CVR</span></div>
+                <div class="st"><span>Lead form</span><span>CVR</span></div>
+                <div class="st"><span>Lead</span><span>CPL · volume</span></div>
+              </div>
+            </div>
+            <div class="viz">
+              <div class="vt"><span>Key metric, indexed</span><b>▲ 20%</b></div>
+              <div class="bars">
+                <div class="bar"><span>Baseline</span><div class="tr"><div class="f" data-w="83.3"></div></div><span class="v">100</span></div>
+                <div class="bar hi"><span>After tests</span><div class="tr"><div class="f" data-w="100"></div></div><span class="v">120</span></div>
+              </div>
+              <div class="note">Baseline = 100</div>
+            </div>
+          </div>
+          <div class="shot" data-img="">Report screenshot coming soon</div>
+        </div>
+      </details>
+    </article>
+
+    <article class="case fade">
+      <div class="c-sum">
+        <div>
+          <div class="c-meta"><b>02</b> · Reporting & BI · Delta Electronics · Taipei · 2026</div>
+          <h3>Building a marketing performance dashboard with AI</h3>
+          <p class="obj">Replaced scattered campaign and business reports with one interactive view.</p>
+          <div class="tags"><span class="tool">Claude Code</span><span class="tool">KPI design</span><span class="tool">Data viz</span></div>
+        </div>
+        <div class="c-nums"><div class="c-num"><b>1 view</b><span>for all KPIs</span></div></div>
+      </div>
+      <details class="more">
+        <summary><span class="closed-t">Read full report</span><span class="open-t">Hide report</span></summary>
+        <div class="c-body">
+          <table class="spec">
+            <tr><th>KPIs tracked</th><td><b>Campaign KPIs and business performance</b></td></tr>
+            <tr><th>Data sources</th><td>Campaign data, business performance data</td></tr>
+            <tr><th>Method</th><td>Defined the KPI structure, then built an interactive dashboard with Claude Code</td></tr>
+            <tr><th>Outcome</th><td>Faster KPI monitoring, with campaign and business analysis working from the same numbers</td></tr>
+          </table>
+          <div class="viz">
+            <div class="vt"><span>Data flow</span></div>
+            <div class="chain"><span>Campaign data</span><i>+</i><span>Business data</span><i>→</i><span>KPI definitions</span><i>→</i><span>Dashboard</span><i>→</i><span>Decisions</span></div>
+          </div>
+          <div class="shot" data-img="">Dashboard screenshot coming soon (sample data)</div>
+        </div>
+      </details>
+    </article>
+
+    <article class="case fade">
+      <div class="c-sum">
+        <div>
+          <div class="c-meta"><b>03</b> · Pipeline & paid media · Mercury Digital · Taipei · 2020–24</div>
+          <h3>Using pipeline and performance data to steer an agency team</h3>
+          <p class="obj">Decided where a 6-person team should focus to hit client and sales targets.</p>
+          <div class="tags"><span class="tool">Meta Ads</span><span class="tool">Google Ads</span><span class="tool">Yahoo Ads</span></div>
+        </div>
+        <div class="c-nums"><div class="c-num"><b>+15%</b><span>project results</span></div><div class="c-num"><b>90%+</b><span>client retention</span></div></div>
+      </div>
+      <details class="more">
+        <summary><span class="closed-t">Read full report</span><span class="open-t">Hide report</span></summary>
+        <div class="c-body">
+          <table class="spec">
+            <tr><th>KPIs tracked</th><td><b>Pipeline, sales vs. target, project results, retention</b></td></tr>
+            <tr><th>Channels</th><td>Cross-media campaigns on Meta, Google and Yahoo Ads</td></tr>
+            <tr><th>Method</th><td>Pipeline and performance trend analysis, turning campaign insights into team actions</td></tr>
+            <tr><th>My role</th><td>Junior AE → Senior AE → Sales Deputy Manager</td></tr>
+          </table>
+          <div class="viz">
+            <div class="vt"><span>Results vs. baseline</span></div>
+            <div class="bars">
+              <div class="bar hi"><span>Project results</span><div class="tr"><div class="f" data-w="60"></div></div><span class="v">+15%</span></div>
+              <div class="bar"><span>Sales vs. target</span><div class="tr"><div class="f" data-w="52"></div></div><span class="v">+13%</span></div>
+            </div>
+            <div class="note">Scale 0–25%. +13% above quarterly target in 2021.</div>
+          </div>
+        </div>
+      </details>
+    </article>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="block" id="experience">
+  <div class="wrap">
+    <div class="sh"><span class="n">03 / EXPERIENCE</span><h2>Experience</h2></div>
+    <div class="gantt fade" id="ganttBox">
+      <div class="cap"><span>Career overview, 2020 to now</span><span>Hover or tap a bar for details</span></div>
       <div class="g-inner" id="gantt"></div>
+      <div class="g-tip" id="gtip" role="tooltip"></div>
     </div>
-
-    <div class="career">
-
-      <article class="entry now reveal">
-        <div class="side"><div class="when">2026.05 — Present</div><div class="co">Delta Electronics</div><div class="loc">Taipei</div></div>
-        <div class="main">
-          <h3>Strategic Growth Manager</h3>
-          <p class="ctx">ESG consulting that combines digital/AI solutions and decarbonization technology.</p>
-          <ul>
-            <li>Built an <b>interactive marketing performance dashboard</b> with Claude Code to track KPIs</li>
-            <li>Supported APAC business development in <b>Korea & Greater China</b> with localized ESG proposals</li>
-            <li>Ran offline ESG events end to end, from outreach to post-event lead follow-up</li>
-            <li>Executed and optimized <b>Google SEM & LinkedIn Ads</b> for B2B lead generation</li>
-          </ul>
-          <div class="tools"><span>Claude Code</span><span>Google SEM</span><span>LinkedIn Ads</span><span>B2B events</span></div>
-          <div class="case" data-img="">
-            <div class="shot"></div>
-            <div class="body">
-              <span class="label">Highlight</span>
-              <h4>A marketing performance dashboard built with AI</h4>
-              <dl>
-                <dt>Problem</dt><dd>Campaign and business KPIs sat in separate reports, so checking performance was slow and done by hand.</dd>
-                <dt>Approach</dt><dd>I designed and built an interactive dashboard with Claude Code that pulls campaign and business metrics into one view.</dd>
-                <dt>Result</dt><dd>Faster KPI monitoring, with campaign and business analysis now working from <b>the same numbers</b>.</dd>
-              </dl>
-            </div>
-          </div>
-        </div>
-      </article>
-
-      <article class="entry reveal">
-        <div class="side"><div class="when">2025.03 — 2025.08</div><div class="co">Dolead</div><div class="loc">Paris</div></div>
-        <div class="main">
-          <h3>Marketing Operations</h3>
-          <p class="ctx">AI-powered lead generation agency.</p>
-          <div class="kpis"><div class="kpi"><b>80+</b><span>A/B tests</span></div><div class="kpi"><b>+20%</b><span>key-metric uplift</span></div></div>
-          <ul>
-            <li>Analysed funnel and campaign performance in <b>GA4 & Looker Studio</b> (lead volume, CPL, CVR)</li>
-            <li>Built a CRO test roadmap, then designed and executed <b>80+ A/B tests</b></li>
-            <li>Standardized reporting templates and dashboards, which sped up decisions and cut manual work</li>
-          </ul>
-          <div class="tools"><span>GA4</span><span>Looker Studio</span><span>A/B testing</span><span>CRO</span></div>
-          <div class="case" data-img="">
-            <div class="shot"></div>
-            <div class="body">
-              <span class="label">Highlight</span>
-              <h4>A CRO testing programme for lead generation funnels</h4>
-              <dl>
-                <dt>Problem</dt><dd>Conversion was dropping somewhere in the lead funnels, but nobody had pinned down where or ranked the fixes.</dd>
-                <dt>Approach</dt><dd>I found the drop-off points in the funnel data, ranked the fixes by impact, and aligned hypotheses with stakeholders before launch.</dd>
-                <dt>Result</dt><dd><b>80+ tests</b>, a <b>20% uplift</b> in key metrics, and optimisation playbooks the team could reuse.</dd>
-              </dl>
-            </div>
-          </div>
-        </div>
-      </article>
-
-      <article class="entry reveal">
-        <div class="side"><div class="when">2024 — 2025</div><div class="co">SKEMA Business School</div><div class="loc">France</div></div>
-        <div class="main">
-          <h3>MSc International Marketing & Business Development</h3>
-          <p class="ctx">Concentrations in international marketing, sustainability and business development.</p>
-        </div>
-      </article>
-
-      <article class="entry reveal">
-        <div class="side"><div class="when">2024.03 — 2025.01</div><div class="co">GANNI</div><div class="loc">Paris</div></div>
-        <div class="main">
-          <h3>Client Advisor</h3>
-          <p class="ctx">Danish contemporary fashion brand.</p>
-          <div class="kpis"><div class="kpi"><b>+25%</b><span>vs. sales target</span></div></div>
-          <ul>
-            <li>Used discovery-style conversations to tailor recommendations in a luxury retail setting</li>
-            <li>Exceeded sales targets by <b>25%</b> through consultative selling and clienteling</li>
-          </ul>
-        </div>
-      </article>
-
-      <article class="entry reveal">
-        <div class="side"><div class="when">2020.05 — 2024.01</div><div class="co">Mercury Digital</div><div class="loc">Taipei</div></div>
-        <div class="main">
-          <h3>Sales Deputy Manager</h3>
-          <p class="ctx">Digital advertising agency.</p>
-          <div class="promo">
-            <span><b>2022 — 2024</b> · Sales Deputy Manager</span>
-            <span><b>2021 — 2022</b> · Senior Account Executive</span>
-            <span><b>2020 — 2021</b> · Junior Account Executive</span>
-          </div>
-          <div class="kpis"><div class="kpi"><b>+15%</b><span>project results</span></div><div class="kpi"><b>+13%</b><span>vs. quarterly target</span></div><div class="kpi"><b>90%+</b><span>client retention</span></div></div>
-          <ul>
-            <li>Led a <b>6-person team</b> on combined sales and marketing plans, backed by pipeline and performance trend analysis</li>
-            <li>Ran cross-media campaigns on <b>Meta, Google & Yahoo Ads</b> against client goals</li>
-            <li>Cold outreach and prospecting added a <b>10% lift</b> in business growth</li>
-          </ul>
-          <div class="tools"><span>Meta Ads</span><span>Google Ads</span><span>Yahoo Ads</span><span>Team leadership</span></div>
-          <div class="case" data-img="">
-            <div class="shot"></div>
-            <div class="body">
-              <span class="label">Highlight</span>
-              <h4>Growing from account executive to team lead</h4>
-              <dl>
-                <dt>Problem</dt><dd>The team needed a clearer, data-backed view of which pipeline opportunities to focus on.</dd>
-                <dt>Approach</dt><dd>I ran pipeline and performance trend analysis, then turned campaign insights into actions the team could ship quickly.</dd>
-                <dt>Result</dt><dd><b>+15%</b> overall project results, and <b>90%+</b> of clients stayed long term.</dd>
-              </dl>
-            </div>
-          </div>
-        </div>
-      </article>
-
+    <div class="jobs fade">
+      <div class="job">
+        <div class="jw"><span class="mono">2026 — now</span><b>Delta Electronics</b><small>Taipei</small></div>
+        <div><h3>Strategic Growth Manager</h3><ul>
+          <li>Built a marketing performance dashboard with Claude Code</li>
+          <li>Ran Google SEM and LinkedIn Ads for B2B lead generation</li>
+          <li>Supported APAC business development in Korea and Greater China</li>
+          <li>Managed ESG events from outreach to lead follow-up</li>
+        </ul></div>
+      </div>
+      <div class="job">
+        <div class="jw"><span class="mono">2025</span><b>Dolead</b><small>Paris</small></div>
+        <div><h3>Marketing Operations</h3><ul>
+          <li>Analysed funnel performance in GA4 and Looker Studio</li>
+          <li>Designed and ran 80+ A/B tests from a CRO roadmap</li>
+          <li>Standardized reporting templates and dashboards</li>
+        </ul></div>
+      </div>
+      <div class="job">
+        <div class="jw"><span class="mono">2024 — 25</span><b>GANNI</b><small>Paris</small></div>
+        <div><h3>Client Advisor</h3><ul>
+          <li>Consultative selling and clienteling in luxury retail</li>
+          <li>Exceeded sales targets by 25%</li>
+        </ul></div>
+      </div>
+      <div class="job">
+        <div class="jw"><span class="mono">2020 — 24</span><b>Mercury Digital</b><small>Taipei</small></div>
+        <div><h3>Junior AE → Senior AE → Sales Deputy Manager</h3><ul>
+          <li>Ran cross-media campaigns on Meta, Google and Yahoo Ads</li>
+          <li>Led a 6-person sales and marketing team</li>
+          <li>Used pipeline and performance data to set team priorities</li>
+          <li>Grew new business through cold outreach and prospecting</li>
+        </ul></div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- SKILLS -->
-<section id="skills" class="soft">
+<!-- SKILLS & EDUCATION -->
+<section class="block" id="skills">
   <div class="wrap">
-    <div class="sec-title">
-      <span class="k">Skills</span>
-      <div><h2>Toolkit & education</h2></div>
-    </div>
-    <div class="two">
-      <div class="panel reveal">
-        <h3>Toolkit</h3>
-        <div class="srow"><span class="a">Analytics</span><span class="b"><span>GA4</span><span>Looker Studio</span><span>SQL (MySQL)</span><span>Dashboards</span></span></div>
-        <div class="srow"><span class="a">Experimentation</span><span class="b"><span>A/B testing</span><span>CRO roadmaps</span><span>Funnel analysis</span></span></div>
-        <div class="srow"><span class="a">Paid media</span><span class="b"><span>Google Ads</span><span>Meta Ads</span><span>LinkedIn Ads</span><span>Yahoo Ads</span></span></div>
-        <div class="srow"><span class="a">Languages</span><span class="b"><span>Mandarin: native</span><span>English: C1</span><span>French: A2</span></span></div>
+    <div class="sh"><span class="n">04 / BACKGROUND</span><h2>Skills & education</h2></div>
+    <div class="two fade">
+      <div>
+        <h3>Skills</h3>
+        <div class="li"><b>Analytics</b><span>GA4, Looker Studio, SQL (MySQL), dashboards</span></div>
+        <div class="li"><b>Experimentation</b><span>A/B testing, CRO roadmaps, funnel analysis</span></div>
+        <div class="li"><b>Paid media</b><span>Google Ads, Meta, LinkedIn, Yahoo</span></div>
+        <div class="li"><b>Languages</b><span>Mandarin (native), English (C1), French (A2)</span></div>
       </div>
-      <div class="panel reveal">
-        <h3>Education</h3>
-        <div class="erow"><b>MSc International Marketing & Business Development</b><span>SKEMA Business School, France · 2024 — 2025</span></div>
-        <div class="erow"><b>BA Business Administration</b><span>THWS, Germany · 2018 — 2019</span></div>
-        <div class="erow"><b>BA International Business</b><span>Shih Chien University, Taiwan · 2015 — 2019</span></div>
-        <div class="erow"><b>Certifications</b><span>Google Ads (Search, Display, Shopping) · The Ultimate MySQL Bootcamp (Udemy)</span></div>
+      <div>
+        <h3>Education & certifications</h3>
+        <div class="li"><span class="y">2024 — 25</span><span><b>MSc International Marketing & Business Development</b><small>SKEMA Business School, France</small></span></div>
+        <div class="li"><span class="y">2018 — 19</span><span><b>BA Business Administration</b><small>THWS, Germany</small></span></div>
+        <div class="li"><span class="y">2015 — 19</span><span><b>BA International Business</b><small>Shih Chien University, Taiwan</small></span></div>
+        <div class="li"><span class="y">Cert.</span><span><b>Google Ads · MySQL Bootcamp</b><small>Google · Udemy</small></span></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- CONTACT -->
-<section id="contact">
-  <div class="wrap contact">
-    <span class="sec-title" style="margin:0"><span class="k">Contact</span></span>
-    <div>
-      <p>I'm looking for my next role in growth, performance marketing or marketing analytics. If that sounds like your team, I'd love to hear from you.</p>
-      <div class="contacts">
-        <a class="link" href="mailto:celineliu0209@gmail.com">celineliu0209@gmail.com</a>
-        <a class="link" href="https://www.linkedin.com/in/celine-liu029" target="_blank" rel="noopener">LinkedIn ↗</a>
-      </div>
+<section class="contact" id="contact">
+  <div class="wrap">
+    <span class="mono" style="font-size:12px;color:var(--accent)">05 / CONTACT</span>
+    <h2>Let's talk</h2>
+    <p>I'm looking for growth, performance marketing and marketing analytics roles.</p>
+    <div class="links">
+      <a class="u" href="mailto:celineliu0209@gmail.com">celineliu0209@gmail.com</a>
+      <a class="u" href="https://www.linkedin.com/in/celine-liu029" target="_blank" rel="noopener">LinkedIn ↗</a>
     </div>
   </div>
 </section>
 
-<footer>
-  <div class="wrap"><span>© 2026 Tzu-Ling (Celine) Liu</span><span>Taipei · Paris</span></div>
-</footer>
+<footer><div class="wrap"><span>© 2026 Tzu-Ling (Celine) Liu</span><span class="mono">Taipei</span></div></footer>
 
 <script>
-  // ---- Screenshots: set data-img="images/your-file.png" on a .case to show it ----
-  document.querySelectorAll('.case').forEach(c => {
-    const shot = c.querySelector('.shot'), src = c.dataset.img, title = c.querySelector('h4').textContent;
-    shot.innerHTML = src ? `<img src="${src}" alt="${title} screenshot" loading="lazy">`
-                         : `<div class="ph"><span>Screenshot coming soon</span></div>`;
+  // Screenshots: set data-img="images/your-file.png" on a .shot to replace its placeholder
+  document.querySelectorAll('.shot[data-img]').forEach(s => {
+    if (s.dataset.img) s.innerHTML = `<img src="${s.dataset.img}" alt="Screenshot" loading="lazy">`;
   });
 
-  // ---- Career overview chart ----
+  // ---- Career timeline with details on hover / tap ----
   const START = 2020, END = 2027;
   const toX = ym => { const [y, m] = ym.split('.').map(Number); return ((y + (m - 1) / 12 - START) / (END - START)) * 100; };
   const pct = y => ((y - START) / (END - START)) * 100;
   const rows = [
-    { name: 'Mercury Digital', bars: [{ s: '2020.05', e: '2021.06', t: 'Junior AE' }, { s: '2021.06', e: '2022.06', t: 'Senior AE' }, { s: '2022.06', e: '2024.02', t: 'Deputy Manager' }] },
-    { name: 'GANNI', bars: [{ s: '2024.03', e: '2025.02', t: 'Client Advisor' }] },
-    { name: 'SKEMA (MSc)', bars: [{ s: '2024.09', e: '2025.09', t: 'MSc', c: 'study' }] },
-    { name: 'Dolead', bars: [{ s: '2025.03', e: '2025.09', t: 'Marketing Ops' }] },
-    { name: 'Delta Electronics', bars: [{ s: '2026.05', e: '2026.10', t: 'Strategic Growth Manager' }] },
+    { name: 'Mercury Digital', bars: [
+      { s: '2020.05', e: '2021.06', t: 'Junior AE', role: 'Junior Account Executive', d: '2020.05 — 2021.05', info: 'Analysed new-client needs and market context to build tailored acquisition strategies.' },
+      { s: '2021.06', e: '2022.06', t: 'Senior AE', role: 'Senior Account Executive', d: '2021.06 — 2022.05', info: 'Ran Meta, Google and Yahoo Ads campaigns. +13% above quarterly target in 2021, 90%+ long-term clients.' },
+      { s: '2022.06', e: '2024.02', t: 'Deputy Manager', role: 'Sales Deputy Manager', d: '2022.06 — 2024.01', info: 'Led a 6-person team using pipeline and performance analysis. +15% overall project results.' } ] },
+    { name: 'GANNI', bars: [{ s: '2024.03', e: '2025.02', t: 'Client Advisor', role: 'Client Advisor · Paris', d: '2024.03 — 2025.01', info: 'Consultative selling and clienteling in luxury retail. Exceeded sales targets by 25%.' }] },
+    { name: 'SKEMA (MSc)', bars: [{ s: '2024.09', e: '2025.09', t: 'MSc', c: 'study', role: 'MSc International Marketing & Business Development', d: '2024 — 2025', info: 'Concentrations in international marketing, sustainability and business development.' }] },
+    { name: 'Dolead', bars: [{ s: '2025.03', e: '2025.09', t: 'Marketing Ops', role: 'Marketing Operations · Paris', d: '2025.03 — 2025.08', info: 'Funnel analysis in GA4 and Looker Studio, 80+ A/B tests, standardized reporting dashboards.' }] },
+    { name: 'Delta Electronics', bars: [{ s: '2026.05', e: '2026.11', t: 'Strategic Growth Manager', role: 'Strategic Growth Manager · Taipei', d: '2026.05 — now', info: 'KPI dashboard built with Claude Code, APAC ESG lead generation via Google SEM, LinkedIn Ads and events.' }] },
   ];
-  const gantt = document.getElementById('gantt');
-  let html = '<div class="g-axis"><span></span><div class="g-years">';
-  for (let y = START; y < END; y++) html += `<span style="left:${pct(y)}%">${y}</span>`;
-  html += '</div></div><div class="g-grid">';
-  for (let y = START; y < END; y++) html += `<i style="left:${pct(y)}%"></i>`;
-  html += '</div>';
+  const gantt = document.getElementById('gantt'), box = document.getElementById('ganttBox'), tip = document.getElementById('gtip');
+  const all = [];
+  let gh = '<div class="g-axis"><span></span><div class="g-years">';
+  for (let y = START; y < END; y++) gh += `<span style="left:${pct(y)}%">${y}</span>`;
+  gh += '</div></div><div class="g-grid">';
+  for (let y = START; y < END; y++) gh += `<i style="left:${pct(y)}%"></i>`;
+  gh += '</div>';
   let delay = 0;
   rows.forEach(r => {
-    html += `<div class="g-row"><div class="g-name">${r.name}</div><div class="g-lane">`;
+    gh += `<div class="g-row"><div class="g-name">${r.name}</div><div class="g-lane">`;
     r.bars.forEach(b => {
-      const l = toX(b.s), w = toX(b.e) - l;
-      html += `<div class="g-bar ${b.c || ''}" style="left:${l}%;width:calc(${w}% - 3px);transition-delay:${delay}s;background-position:${-l * 6.8}px 0" title="${b.s} – ${b.e}" data-l="${l}" data-w="${w}">${b.t}</div>`;
+      const l = toX(b.s), w = toX(b.e) - l, i = all.push(b) - 1;
+      gh += `<button type="button" class="g-bar ${b.c || ''}" style="left:${l}%;width:calc(${w}% - 3px);transition-delay:${delay}s;background-position:${-l * 6.8}px 0" data-i="${i}" data-l="${l}" data-w="${w}" aria-label="${b.role}, ${b.d}">${b.t}</button>`;
       delay += 0.1;
     });
-    html += '</div></div>';
+    gh += '</div></div>';
   });
-  gantt.innerHTML = html;
+  gantt.innerHTML = gh;
+
   function fitLabels() {
     gantt.querySelectorAll('.g-out').forEach(n => n.remove());
     gantt.querySelectorAll('.g-bar').forEach(bar => {
@@ -508,35 +547,52 @@
     });
   }
   (document.fonts ? document.fonts.ready : Promise.resolve()).then(fitLabels);
-  addEventListener('resize', fitLabels);
+  addEventListener('resize', () => { fitLabels(); hideTip(); });
+  addEventListener('scroll', () => hideTip(), { passive: true });
+  box.addEventListener('scroll', () => hideTip(), { passive: true });
 
-  // ---- Top bar: border + active link ----
-  const bar = document.getElementById('topbar');
-  const links = [...document.querySelectorAll('.top nav a')];
+  let pinned = null;
+  function showTip(bar) {
+    const b = all[+bar.dataset.i];
+    tip.innerHTML = `<b>${b.role}</b><div class="d">${b.d}</div>${b.info}`;
+    const br = bar.getBoundingClientRect();
+    tip.classList.add('show');
+    const tw = tip.offsetWidth, th = tip.offsetHeight;
+    const left = Math.max(8, Math.min(br.left + br.width / 2 - tw / 2, innerWidth - tw - 8));
+    const below = br.bottom + 8 + th < innerHeight;
+    tip.style.left = left + 'px';
+    tip.style.top = (below ? br.bottom + 8 : br.top - th - 8) + 'px';
+    gantt.querySelectorAll('.g-bar.on').forEach(x => x.classList.remove('on'));
+    bar.classList.add('on');
+  }
+  function hideTip() { tip.classList.remove('show'); pinned = null; gantt.querySelectorAll('.g-bar.on').forEach(x => x.classList.remove('on')); }
+  gantt.addEventListener('mouseover', e => { const bar = e.target.closest('.g-bar'); if (bar && !pinned) showTip(bar); });
+  gantt.addEventListener('mouseout', e => { if (e.target.closest('.g-bar') && !pinned) hideTip(); });
+  gantt.addEventListener('focusin', e => { const bar = e.target.closest('.g-bar'); if (bar) showTip(bar); });
+  gantt.addEventListener('focusout', () => { if (!pinned) hideTip(); });
+  gantt.addEventListener('click', e => {
+    const bar = e.target.closest('.g-bar'); if (!bar) return;
+    if (pinned === bar) { hideTip(); return; }
+    showTip(bar); pinned = bar;
+  });
+  document.addEventListener('click', e => { if (pinned && !e.target.closest('.g-bar')) hideTip(); });
+  addEventListener('keydown', e => { if (e.key === 'Escape') hideTip(); });
+
+  // ---- Bars inside a report animate when it opens ----
+  document.querySelectorAll('details.more').forEach(d => d.addEventListener('toggle', () => {
+    d.querySelectorAll('[data-w]').forEach(f => f.style.width = d.open ? f.dataset.w + '%' : '0');
+  }));
+
+  // ---- Nav + fade ----
+  const links = [...document.querySelectorAll('header.top nav a')];
   const secs = links.map(a => document.querySelector(a.getAttribute('href')));
   addEventListener('scroll', () => {
-    bar.classList.toggle('scrolled', scrollY > 8);
-    const y = scrollY + innerHeight * .35;
+    const y = scrollY + innerHeight * .3;
     let cur = -1; secs.forEach((s, i) => { if (s.offsetTop <= y) cur = i; });
     links.forEach((a, i) => a.classList.toggle('active', i === cur));
   }, { passive: true });
-
-  // ---- Reveal + count-up ----
-  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const countUp = el => {
-    const target = +el.dataset.count, pre = el.dataset.prefix || '', suf = el.dataset.suffix || '';
-    if (reduce) { el.textContent = pre + target + suf; return; }
-    const t0 = performance.now(), dur = 1300;
-    const tick = now => { const p = Math.min((now - t0) / dur, 1); el.textContent = pre + Math.round(target * (1 - Math.pow(1 - p, 3))) + suf; if (p < 1) requestAnimationFrame(tick); };
-    requestAnimationFrame(tick);
-  };
-  const io = new IntersectionObserver(entries => entries.forEach(e => {
-    if (!e.isIntersecting) return;
-    e.target.classList.add('in');
-    e.target.querySelectorAll('[data-count]').forEach(countUp);
-    io.unobserve(e.target);
-  }), { threshold: 0.1 });
-  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: 0.1 });
+  document.querySelectorAll('.fade').forEach(el => io.observe(el));
 </script>
 </body>
 </html>
